@@ -269,6 +269,7 @@ app.get('/', function (req, res, next) {
 
 app.get('/', handle_get ) ;
 app.post('/', handle_post ) ;
+app.set('port', (process.env.PORT || 5000));
 
 db_init(function (err, results) {
     if (err) {
