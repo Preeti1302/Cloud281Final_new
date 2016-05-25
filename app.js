@@ -276,11 +276,11 @@ db_init(function (err, results) {
         console.error(err);
         process.exit(-1);
     } else {
-        console.log( "Server running on Port 8080..." ) ;
+        console.log( "Server running on Port 3000..." ) ;
         //db.collections(function(err, collections) {
         //    console.log(collections);
         //});
-        app.listen(8080);
+        app.listen(3000);
     }
 });
 
