@@ -277,11 +277,9 @@ db_init(function (err, results) {
         console.error(err);
         process.exit(-1);
     } else {
-        console.log( "Server running on Port 5000..." ) ;
-        //db.collections(function(err, collections) {
-        //    console.log(collections);
-        //});
-        app.listen(5000);
+		app.listen(app.get('port'), function() {
+ 	 console.log('Node app is running on port',app.get('port'));
+  });
     }
 });
 
